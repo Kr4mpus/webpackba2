@@ -24,6 +24,7 @@ describe(`Home`, () => {
 
   // async beforeEach
   beforeEach(async(() => {
+    window.jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
     TestBed.configureTestingModule({
       declarations: [HomeComponent],
       schemas: [NO_ERRORS_SCHEMA],
