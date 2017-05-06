@@ -21,15 +21,15 @@ module.exports = function (config) {
     exclude: [],
 
     client: {
-      captureConsole: false,
-	  browserDisconnectTimeout = 2000,
-	  browserDisconnectTolerance = 0,
-	  browserNoActivityTimeout = 10000
+      captureConsole: false
     },
 	
 	captureTimeout = 60000,
-	
-    /*
+	browserDisconnectTimeout = 2000,
+	browserDisconnectTolerance = 0,
+	browserNoActivityTimeout = 10000,
+    
+	/*
      * list of files / patterns to load in the browser
      *
      * we are building the test environment in ./spec-bundle.js
