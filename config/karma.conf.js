@@ -71,10 +71,6 @@ module.exports = function (config) {
         chunks: false
       }
     },
-
-	plugins: [
-      require('karma-phantomjs-launcher')
-    ],
 	
     /*
      * test results reporter to use
