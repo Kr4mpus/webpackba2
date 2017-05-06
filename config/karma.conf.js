@@ -111,18 +111,19 @@ module.exports = function (config) {
         flags: ['--no-sandbox']
       }
     },
-
-	captureTimeout = 60000,
-	browserDisconnectTimeout = 2000,
-	browserDisconnectTolerance = 0,
-	browserNoActivityTimeout = 10000,
 	
     /*
      * Continuous Integration mode
      * if true, Karma captures browsers, runs the tests and exits
      */
     singleRun: false
-  };
+
+	captureTimeout: 60000,
+	browserDisconnectTimeout: 2000,
+	browserDisconnectTolerance: 0,
+	browserNoActivityTimeout: 10000,
+	
+	};
 
   if (process.env.TRAVIS) {
     configuration.browsers = [
