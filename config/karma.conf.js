@@ -72,6 +72,20 @@ module.exports = function (config) {
       }
     },
 
+	plugins: [
+      require('karma-chrome-launcher'),
+      require('karma-coverage'),
+      require('karma-firefox-launcher'),
+      require('karma-mocha'),
+      require('karma-chai-plugins'),
+
+      require('karma-spec-reporter'),
+      require('karma-phantomjs-launcher'),
+      require('karma-script-launcher'),
+      require('karma-webpack'),
+      require('karma-sourcemap-loader')
+    ],
+	
     /*
      * test results reporter to use
      *
