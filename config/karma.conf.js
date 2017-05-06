@@ -114,10 +114,10 @@ module.exports = function (config) {
      */
     singleRun: true,
 
-	captureTimeout: 60000, 
-	browserDisconnectTimeout : 10000,
+	captureTimeout: 120000, 
+	browserDisconnectTimeout : 30000,
 	browserDisconnectTolerance : 1,
-	browserNoActivityTimeout : 60000
+	browserNoActivityTimeout : 120000
   });
   
 };
