@@ -24,7 +24,7 @@ module.exports = function (config) {
       captureConsole: false,
 	  captureTimeout = 60000,
 	  browserDisconnectTimeout = 2000,
-	 browserDisconnectTolerance = 0,
+	  browserDisconnectTolerance = 0,
 	  browserNoActivityTimeout = 10000
     },
 	
