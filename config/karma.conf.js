@@ -6,8 +6,10 @@ module.exports = function (config) {
   var testWebpackConfig = require('./webpack.test.js')({ env: 'test' });
 
   var configuration = {
+	};
 
-    // base path that will be used to resolve all patterns (e.g. files, exclude)
+  config.set({
+	  // base path that will be used to resolve all patterns (e.g. files, exclude)
     basePath: '',
 
     /*
@@ -121,15 +123,14 @@ module.exports = function (config) {
 	captureTimeout: 60000,
 	browserDisconnectTimeout: 2000,
 	browserDisconnectTolerance: 0,
-	browserNoActivityTimeout: 10000,
-	
-	};
-
+	browserNoActivityTimeout: 10000
+  });
+  
   if (process.env.TRAVIS) {
     configuration.browsers = [
       'ChromeTravisCi'
     ];
   }
 
-  config.set(configuration);
+  //config.set(configuration);
 };
