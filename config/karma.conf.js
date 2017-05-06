@@ -23,11 +23,7 @@ module.exports = function (config) {
     client: {
       captureConsole: false
     },
-	
-	captureTimeout = 60000,
-	browserDisconnectTimeout = 2000,
-	browserDisconnectTolerance = 0,
-	browserNoActivityTimeout = 10000,
+
     
 	/*
      * list of files / patterns to load in the browser
@@ -116,6 +112,11 @@ module.exports = function (config) {
       }
     },
 
+	captureTimeout = 60000,
+	browserDisconnectTimeout = 2000,
+	browserDisconnectTolerance = 0,
+	browserNoActivityTimeout = 10000,
+	
     /*
      * Continuous Integration mode
      * if true, Karma captures browsers, runs the tests and exits
