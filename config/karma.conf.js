@@ -21,9 +21,11 @@ module.exports = function (config) {
     exclude: [],
 
     client: {
-      captureConsole: false
+      captureConsole: false,
+	  browserNoActivityTimeout: 100000,
+	  browserDisconnectTolerance: 2
     },
-
+	
     /*
      * list of files / patterns to load in the browser
      *
@@ -115,7 +117,7 @@ module.exports = function (config) {
      * Continuous Integration mode
      * if true, Karma captures browsers, runs the tests and exits
      */
-    singleRun: true
+    singleRun: false
   };
 
   if (process.env.TRAVIS) {
