@@ -22,12 +22,11 @@ module.exports = function (config) {
 
     client: {
       captureConsole: false,
+	  captureTimeout = 60000,
+	  browserDisconnectTimeout = 2000,
+	 browserDisconnectTolerance = 0,
+	  browserNoActivityTimeout = 10000
     },
-	
-	captureTimeout = 60000,
-	browserDisconnectTimeout = 2000,
-	browserDisconnectTolerance = 0,
-	browserNoActivityTimeout = 10000,
 	
     /*
      * list of files / patterns to load in the browser
