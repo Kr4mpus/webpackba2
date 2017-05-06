@@ -73,10 +73,7 @@ module.exports = function (config) {
     },
 
 	plugins: [
-      require('karma-chrome-launcher'),
-      require('karma-coverage'),
-      require('karma-phantomjs-launcher'),
-      require('karma-webpack')
+      require('karma-phantomjs-launcher')
     ],
 	
     /*
