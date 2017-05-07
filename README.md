@@ -1,2 +1,2 @@
 Stefan Moerth Webpack App BA2 \n
-Geht der Zeilenumbruch?
+Version 1.0 working
